@@ -6,7 +6,7 @@
     "scheme": "cliniq",
     "orientation": "portrait",
     "userInterfaceStyle": "dark",
-    "newArchEnabled": true,
+    "newArchEnabled": false,
     "icon": "./assets/icon.png",
     "splash": {
       "image": "./assets/splash-icon.png",
@@ -26,9 +26,11 @@
         "foregroundImage": "./assets/icon.png",
         "backgroundColor": "#0A0A0A"
       },
-      "edgeToEdgeEnabled": true,
+
       "permissions": [
-        "CAMERA"
+        "CAMERA",
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
       ]
     },
     "web": {
@@ -36,7 +38,11 @@
       "bundler": "metro"
     },
     "extra": {
-      "apiUrl": "https://kxg1672vlh07xr6x26cne-preview-4200.runable.site/"
+      "apiUrl": "https://kxg1672vlh07xr6x26cne-preview-4200.runable.site/",
+      "router": {},
+      "eas": {
+        "projectId": "9e258fac-8802-4dab-912f-ccc39e848a65"
+      }
     },
     "plugins": [
       "expo-router",
@@ -47,6 +53,7 @@
         }
       ],
       "expo-image"
-    ]
+    ],
+    "owner": "vaascode"
   }
 }
