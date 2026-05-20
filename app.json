@@ -1,0 +1,59 @@
+{
+  "expo": {
+    "name": "Cliniq",
+    "slug": "cliniq",
+    "version": "1.0.0",
+    "scheme": "cliniq",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": false,
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#0A0A0A"
+    },
+    "ios": {
+      "bundleIdentifier": "com.cliniq_k8m2.runable",
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Cliniq needs camera access to scan clinic QR codes"
+      }
+    },
+    "android": {
+      "package": "com.cliniq_k8m2.runable",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#0A0A0A"
+      },
+
+      "permissions": [
+        "CAMERA",
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "extra": {
+      "apiUrl": "https://kxg1672vlh07xr6x26cne-preview-4200.runable.site/",
+      "router": {},
+      "eas": {
+        "projectId": "9e258fac-8802-4dab-912f-ccc39e848a65"
+      }
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow Cliniq to access your camera to scan QR codes"
+        }
+      ],
+      "expo-image"
+    ],
+    "owner": "vaascode"
+  }
+}
